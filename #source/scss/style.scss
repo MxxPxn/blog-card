@@ -1,6 +1,12 @@
 @import "nulling.scss";
+@font-face{
+    font-family: Figtree;
+    src: url(/fonts/Figtree-VariableFont_wght.ttf)
+}
+
 *{
     box-sizing: border-box;
+    font-family: Figtree;
 }
 
 .wrapper {
@@ -23,7 +29,7 @@
     border: 1px solid #000;
     border-radius: 20px;
     box-shadow: 8px 8px 0px #000000;
-    gap: 24px;
+    gap: 20px;
 
 		&__image {
             img{
@@ -31,24 +37,62 @@
             }
         }
 
-		&__author {}
+		&__author {
+            width: 129px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+
+            img{
+                width: 32px;
+                height: 32px;
+            }
+            p{
+                padding: 0 0 0 10px;
+                font-weight: 800;
+             
+            }
+        }
 }
 .content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 24px;
+    gap: 20px;
 
     &__btn {
+        padding: 4px 12px;
         background-color: #F4D04E;
+        border-radius: 4px;
+        font-weight: 700;
+        width: 82px;
+        height: 29px;
+        font-size: 14px;
     }
 
-    &__date {}
+    &__date {
+        font-weight:100;
+        font-size: 14px;
+        line-height: 150%;
+    }
 
-    &__title {}
+    &__title {
+        font-size: 24px;
+        font-weight: 800;
 
-    &__text {}
+    }
+
+    &__text {
+        width: 336px;
+        height: 72px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color:#6B6B6B;
+
+    }
 }
+
 
 
 
