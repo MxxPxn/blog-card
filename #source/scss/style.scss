@@ -12,7 +12,6 @@
 .wrapper {
     display: flex;
     justify-content: center;
-    // align-items: center;
     max-width: 100%;
     height: 100%;
     margin: 0 auto;
@@ -99,14 +98,49 @@
         background-color: #f1701a;
     }
     .card {
-        width: 344px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 24px;
+        position: absolute;
+        width: 327px;
+        height: 501px;
+        left: 50px;
+        top: 156px;
        
         &__image {
            
             img{
+                max-width: 100%;
+                max-height: auto;
                 border-radius: 10px;
             }
         }
+        .content {
+
+            &__btn {}
+    
+            &__date {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 150%;
+            }
+    
+            &__title {
+                font-size: 18px;
+            }
+    
+            &__text {
+                max-width: 300px;
+                height: 72px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 150%;
+                color:#6B6B6B;
+            }
+    }
+    
     }
 }
 
